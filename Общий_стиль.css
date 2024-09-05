@@ -1,0 +1,181 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    background-image: url(vivid-blurred-colorful-background.jpg)
+}
+header{
+    text-align:center;
+    height: 30px;
+    align-content:center;
+    border-top: solid 6px;
+    border-left: solid 6px;
+    border-right: solid 6px;
+    background-color: darkgray;
+    font: 24px white Italic ;
+}
+nav{
+    position:sticky;
+    top: 0;
+    background-color: black;
+    text-align: center;
+    border:solid 6px;
+    z-index: 100;
+    a {
+        color:white;
+        font: italic bold 20px Aria;
+        text-decoration: none;
+        padding: 6px;
+    }
+    a:hover{
+        color:black;
+        font: italic bold 20px Aria;
+        text-decoration: none;
+        background-color: white;
+        padding: 6px;
+    }
+    ul {
+        display: flex;
+        list-style:none;
+        justify-content: space-evenly;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        /*gap:20px;*/
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+main{
+    height: 2000px;
+    margin: 18px 0px 18px 0px;
+    #One{
+        backdrop-filter: blur(12px);
+        margin: 18px 0px 18px 0px;
+        background-color: rgba(245, 245, 220, 0.2);
+        padding: 10px 0px 10px 0px;
+        h1{
+            text-align: center;
+            margin: 0px;
+        }
+        p{
+            text-align: center;
+            margin: 3px;
+        }
+    }
+    #Two{
+        margin: 18px 0px 18px 0px;
+        backdrop-filter: blur(12px);
+        background-color: rgba(245, 245, 220, 0.2);
+        padding: 10px 0px 10px 0px;
+        h1{
+            text-align: center;
+            margin: 0px;
+        }
+        table{
+            display: flex;
+            align-content: space-around;
+            justify-content: space-around;
+            tr{
+                
+                height: 500px;
+                th{
+                    width: 500px;
+                }
+            }
+        }
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        background-color: aquamarine;
+        .Scroll-card{
+            background: linear-gradient(to bottom, #c47586, #354678);
+            display: flex;
+            gap: 20px;
+            width: 400px;
+            height: 400px;
+            overflow-x: scroll;
+            padding: 20px 30px 10px 20px;
+            border-radius: 20px 30px 10px 20px;
+            scroll-snap-type: x mandatory;
+            scroll-padding: 30px;
+        }
+        .Scroll-card::-webkit-scrollbar{
+            height: 10px;
+        }
+        .Scroll-card::-webkit-scrollbar-track{
+            background-color: #0097c4;
+            border-radius: 0px 0px 20px 20px;
+        }
+        .Scroll-card::-webkit-scrollbar-thumb{
+            background-color: beige;
+            border-radius: 10px;
+        }
+        .Scroll-card .card{
+            flex: 0 0 100%;
+            color: #fff;
+            padding: 30px 20px;
+            border: 10px;
+            scroll-snap-align: start;
+        }
+        .Scroll-card .card.one{
+            background: linear-gradient(#986543,#730243);
+        }
+        .Scroll-card .card.two{
+            background: linear-gradient(#1b7471,#576d8b);
+        }
+        .Scroll-card .card.three{
+            background: linear-gradient(#b62f2d,#776061);
+        }
+        .Scroll-card .card.four{
+            background: linear-gradient(#7bd176,#e01ac9);
+        }
+        .Scroll-card .card.five{
+            background: linear-gradient(#813909,#83ff2b);
+        }
+        .Scroll-card .card a{
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .Scroll-card .card a:hover{
+            letter-spacing: 1px;
+        }
+
+    }
+}
+
+footer{
+    background-color: black;
+    color:white;
+    border:black solid 8px;
+    .po{
+        display: flex;
+        list-style:none;
+        justify-content: space-evenly;
+        margin: 0px;
+        padding: 0px;
+        li{
+            max-width: 130px;
+            ul{
+                padding:0px;
+            }
+        }
+    }
+    .pa{
+        list-style: none;
+        font-size: 18px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(255, 183, 183);
+    }
+    .pe{
+        color: rgb(255, 183, 183);
+    }
+}
