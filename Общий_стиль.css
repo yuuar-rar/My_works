@@ -94,14 +94,14 @@ main{
         .Scroll-card{
             background: linear-gradient(to bottom, #c47586, #354678);
             display: flex;
-            gap: 20px;
-            width: 400px;
+            gap: 30px;
+            width: 800px;
             height: 400px;
             overflow-x: scroll;
-            padding: 20px 30px 10px 20px;
-            border-radius: 20px 30px 10px 20px;
+            padding: 20px 20px 20px 20px;
+            border-radius: 20px 20px 10px 10px;
             scroll-snap-type: x mandatory;
-            scroll-padding: 30px;
+            scroll-padding: 21px;
         }
         .Scroll-card::-webkit-scrollbar{
             height: 10px;
@@ -112,14 +112,15 @@ main{
         }
         .Scroll-card::-webkit-scrollbar-thumb{
             background-color: beige;
-            border-radius: 10px;
+            border-radius: 0px 0px 20px 20px;
         }
         .Scroll-card .card{
             flex: 0 0 100%;
             color: #fff;
-            padding: 30px 20px;
+            padding: 20px 20px;
             border: 10px;
-            scroll-snap-align: start;
+            scroll-snap-align: center;
+            max-width: 760px;
         }
         .Scroll-card .card.one{
             background: linear-gradient(#986543,#730243);
