@@ -118,9 +118,15 @@ main{
                 .prev-button {
                     left: 0px;
                 }
+                .prev-button:hover{
+                    letter-spacing: 4px;
+                }
 
                 .next-button {
                     right: 0px;
+                }
+                .next-button:hover{
+                    letter-spacing: -4px;
                 }
 
                 #item_1{
@@ -169,6 +175,7 @@ main{
                 border-radius: 20px 20px 10px 10px;
                 scroll-snap-type: x mandatory;
                 scroll-padding: 21px;
+                ;
             }
             .Scroll-card::-webkit-scrollbar{
                 height: 10px;

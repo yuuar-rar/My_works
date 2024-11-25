@@ -22,5 +22,9 @@ const slide = () => {
 }
 
 window.addEventListener('load', () => {
+  /* Перелистывание на случайную карточку при загрузке страницы
+  slideIndex = Math.floor(Math.random() * slideCount);
+  slide();
+  */
   slide();
 });
