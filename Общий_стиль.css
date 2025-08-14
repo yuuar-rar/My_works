@@ -27,6 +27,8 @@ nav{
         text-decoration: none;
         padding: 6px;
         transition: all 0.12s ease;
+        position:sticky;
+        width: 100%;
     }
     a:hover{
         color:black;
@@ -34,7 +36,8 @@ nav{
         text-decoration: none;
         background-color: white;
         padding: 6px;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
+        width: 100%;
     }
     ul {
         display: flex;
@@ -45,6 +48,9 @@ nav{
         margin: 0px;
         padding: 0px;
         gap: 10px;
+    }
+    li{
+        width: 100%;
     }
 }
 
