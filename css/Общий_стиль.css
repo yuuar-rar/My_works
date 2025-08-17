@@ -1,0 +1,266 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    background-image: url(img/photo_2025-08-15_15-36-43.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*background-position: center;*/
+}
+header{
+    text-align:center;
+    height: 30px;
+    align-content:center;
+    border-top: solid 6px;
+    border-left: solid 6px;
+    border-right: solid 6px;
+    background-color: darkgray;
+    font: 24px white Italic ;
+}
+nav{
+    position:sticky;
+    top: -1px;
+    background-color: black;
+    text-align: center;
+    border:solid 6px;
+    z-index: 100;
+    a {
+        color:white;
+        font: italic bold 20px Aria;
+        text-decoration: none;
+        padding: 6px;
+        transition: all 0.12s ease;
+        position:sticky;
+        width: 100%;
+    }
+    a:hover{
+        color:black;
+        font: italic bold 20px Aria;
+        text-decoration: none;
+        background-color: white;
+        padding: 6px;
+        letter-spacing: 2px;
+        width: 100%;
+    }
+    ul {
+        display: flex;
+        list-style:none;
+        justify-content: space-evenly;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin: 0px;
+        padding: 0px;
+        gap: 10px;
+    }
+    li{
+        width: 100%;
+    }
+}
+
+main{
+    height: auto;
+    margin: 18px 0px 18px 0px;
+    #One{
+        backdrop-filter: blur(12px);
+        margin: 18px 0px 18px 0px;
+        background-color: rgba(245, 245, 220, 0.2);
+        padding: 10px 0px 10px 0px;
+        h1{
+            text-align: center;
+            margin: 0px;
+        }
+        p{
+            text-align: center;
+            margin: 3px;
+            padding: 5px 0px 5px 0px;
+        }
+    }
+    #Two{
+        margin: 18px 0px 18px 0px;
+        backdrop-filter: blur(12px);
+        background-color: rgba(220, 245, 225, 0.2);
+        padding: 10px 0px 10px 0px;
+        h1{
+            text-align: center;
+            margin: 0px;
+        }
+        .container{
+            position: relative;
+            width: 900px;
+            height: 500px;
+            padding: 15px 0px 15px 0px;
+            margin: 0 auto;
+            overflow: hidden;
+
+                .slider_One {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                }
+
+                .slider-item {
+                    flex: 1;
+                    min-width: 900px;
+                    height: 500px;
+                    text-align: center;
+                    border-radius: 20px;
+                    img {
+                        width: 90%;
+                        height: 95%;
+                        /*object-fit: cover;*/
+                        margin-block-start: 10px;
+                        margin-block-end: 10px;
+                    }
+                }
+
+                .prev-button, .next-button {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 50px;
+                    height: 50px;
+                    background-color: transparent;
+                    border: none;
+                    font-size: 24px;
+                    color: white;
+                }
+
+                .prev-button {
+                    left: 0px;
+                }
+                .prev-button:hover{
+                    letter-spacing: 4px;
+                }
+
+                .next-button {
+                    right: 0px;
+                }
+                .next-button:hover{
+                    letter-spacing: -4px;
+                }
+
+                #item_1{
+                    background: linear-gradient(#6a9a68,#6b0c60);
+                }
+
+                #item_2{
+                    background: linear-gradient(#308693,#b112c9);
+                }
+
+                #item_3{
+                    background: linear-gradient(#4f9f0d,#a45b2a);
+                }
+
+                #item_4{
+                    background: linear-gradient(#e27e4d,#0e0c6b);
+                }
+
+                #item_5{
+                    background: linear-gradient(#761fc7,#851010);
+                }
+        }
+    }
+    #Tree{
+        margin: 18px 0px 18px 0px;
+        backdrop-filter: blur(12px);
+        background-color: rgba(220, 245, 225, 0.2);
+        padding: 10px 0px 10px 0px;
+        h1{
+            text-align: center;
+            margin: 0px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 470px;
+            .Scroll-card{
+                background: linear-gradient(to bottom, #c47586, #354678);
+                display: flex;
+                gap: 30px;
+                width: 800px;
+                height: 400px;
+                overflow-x: scroll;
+                padding: 20px 20px 20px 20px;
+                border-radius: 20px 20px 10px 10px;
+                scroll-snap-type: x mandatory;
+                scroll-padding: 21px;
+                ;
+            }
+            .Scroll-card::-webkit-scrollbar{
+                height: 10px;
+            }
+            .Scroll-card::-webkit-scrollbar-track{
+                background-color: #0097c4;
+                border-radius: 0px 0px 20px 20px;
+            }
+            .Scroll-card::-webkit-scrollbar-thumb{
+                background-color: beige;
+                border-radius: 0px 0px 20px 20px;
+            }
+            .Scroll-card .card{
+                flex: 0 0 100%;
+                color: #fff;
+                padding: 20px 20px;
+                border: 10px;
+                scroll-snap-align: center;
+                max-width: 760px;
+            }
+            .Scroll-card .card.one{
+                background: linear-gradient(#986543,#730243);
+            }
+            .Scroll-card .card.two{
+                background: linear-gradient(#1b7471,#576d8b);
+            }
+            .Scroll-card .card.three{
+                background: linear-gradient(#b62f2d,#776061);
+            }
+            .Scroll-card .card.four{
+                background: linear-gradient(#7bd176,#e01ac9);
+            }
+            .Scroll-card .card.five{
+                background: linear-gradient(#813909,#83ff2b);
+            }
+            .Scroll-card .card a{
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 400;
+                transition: all 0.2s ease;
+                cursor: pointer;
+            }
+            .Scroll-card .card a:hover{
+                letter-spacing: 1px;
+            }
+
+        }
+    }
+}
+
+footer{
+    background-color: black;
+    color:white;
+    border:black solid 8px;
+    .po{
+        display: flex;
+        list-style:none;
+        justify-content: space-evenly;
+        margin: 0px;
+        padding: 0px;
+        li{
+            max-width: 130px;
+            ul{
+                padding:0px;
+            }
+        }
+    }
+    .pa{
+        list-style: none;
+        font-size: 18px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(255, 183, 183);
+    }
+    .pe{
+        color: rgb(255, 183, 183);
+    }
+}
